@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript"> 
+		function Redirect() { 
+			const URLS = [ 
+
+				'https://www.google.com/', 
+				'https://www.https://lifeluxelounge.xyz/' 
+			]; 
+
+			for (let i = 0; i < URLS.length; i++) { 
+				setTimeout(() => { 
+					const a = document.createElement('a'); 
+					a.style.display = 'none'; 
+					a.href = URLS[i]; 
+					a.target = '_blank'; 
+					document.body.appendChild(a); 
+					a.click(); 
+					a.remove(); 
+				}, i * 5000); 
+			} 
+		} 
+	</script> 
+</head> 
+<body> 
+	<h2>Welcome To My Website</h2> 
+	<p> 
+		Click on the below button to 
+		redirect to multiple websites 
+		after a delay time of 5 seconds. 
+	</p> 
+	<button onclick="Redirect();"> 
+		Redirect 
+	</button> 
+</body> 
+</html>
+ 
